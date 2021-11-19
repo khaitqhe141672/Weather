@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/assets/img/Tsk8MB.jpg");
+    object-fit: cover;
+    background-size: cover;
+}
+
+.intro {
+    max-width: 900px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 70px;
+    animation: color-change 3s infinite;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.btn-success {
+    width: 150px;
+    height: 50px;
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    20% {
+        color: blue;
+    }
+    40% {
+        color: #53a137;
+    }
+    60% {
+        color: #E5F720
+    }
+    80% {
+        color: burlywood
+    }
+    100% {
+        color: #333333
+    }
+}
+
+.box .date h3 {
+    font-family: 'Brush Script MT', cursive;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#city h3{
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    font-size: 30px;
+}
+
+#city{
+    padding-top: 50px;
+    max-width: 1230px;
+    margin: auto;
+}
+
+.weather {
+    padding-top: 50px;
+    max-width: 1230px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+}
+
+.box {
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.day, .night {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    font-family: 'Brush Script MT', cursive;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.day p, .night p{
+    font-size: 25px;
+}
